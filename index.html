@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head> 
+    <body>
+    <main>
+        <h1 id="title">GitCody Survey Form<h1>
+        <p id="description">We are taking information about interest in GitCody.</p>
+        <form id="survey-form">
+        <section>
+            <fieldset>
+                
+                    <label for="name" id="name-label">Name<input id="name" type="text" placeholder="John Smith" required></label>
+                    <label for="email" id="email-label">Email Address<input id="email" type="email" placeholder="johnsmith@gmail.com" required></label>
+                    <label for="age" id="number-label">Age <input id="number" type="number" name="age" min="13" max="120" placeholder="25" /></label>
+                    <label for="referrer">Current Role
+                    <select id="dropdown" name="role">
+                        <option value="">(select one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Freelancer</option>
+                        <option value="3">Contractor</option>
+                        <option value="4">Employee</option>
+                        <option value="5">Entrepreneur</option>
+                    </select>
+                 
+            </fieldset>
+        </section>
+        <section>
+          <fieldset>
+            <legend>Where do you store your code?</legend>
+            <label><input id="online" type="radio" name="online-locally" value="online" > Online</label>
+            <label><input id="locally" type="radio" name="online-locally" value="locally"> Locally</label>
+          </fieldset>
+          <fieldset>
+            <legend>What programming language do you use the most?</legend>
+            <input type="checkbox" name="programming-language" value="javascript" checked>Javascript
+            <input type="checkbox" name="programming-language" value="python">Python
+            </form>
+          </fieldset>
+          <fieldset>
+            <h2>Additional Comments</h2>
+            <textarea></textarea>
+            <button type="submit" id="submit">Submit</button>
+            </fieldset>
+            </section>
+          </form>  
+    </main>
+    
+    </body> 
+</html> 
